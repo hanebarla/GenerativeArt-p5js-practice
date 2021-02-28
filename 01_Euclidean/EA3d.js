@@ -1,6 +1,6 @@
 function setup(){
-    let EA3d = createCanvas(600, 600);
-    background(240);
+    let EA3d = createCanvas(500, 500);
+    background(0);
     EA3d.parent("01-EA3d");
 }
 

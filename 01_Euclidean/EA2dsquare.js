@@ -1,9 +1,9 @@
 var scaler = 30;
-var x1 = 17;
-var x2 = 6;
+var x1 = 21;
+var x2 = 13;
 var ratio = x2 / x1;
 var init_col = Math.random();
-var step_col = 0.29;
+var step_col = 0.23;
 
 function setup(){
     let EA2d = createCanvas(x1*scaler*ratio, x2*scaler);
@@ -16,7 +16,7 @@ function setup(){
     colorMode(HSB, 1);
 
     var d = x2;
-    while(d > 1e-2){
+    while(d > 0.1){
         if(count % 2 == 1){
             while((draw_pos_y + (d/ratio)) < x2){
                 var c = color(init_col, 1, 1);
